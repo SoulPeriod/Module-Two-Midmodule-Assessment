@@ -30,7 +30,7 @@ function diceRollPicture () {
     }
   sumOfDice.textContent = `sum = ${sum}`
   numOfClicks++
-  if(numOfClicks >1){
+  if(numOfClicks >0){
       const li = document.createElement('li')
      ul.appendChild(li)
      li.textContent = `${diceFace.innerHTML} = ${sum}`
