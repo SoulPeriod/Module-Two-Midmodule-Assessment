@@ -39,11 +39,11 @@ Build a website with the following user stories:
 - Use the follow HTML entity values for dice:
 
 ```
-&#9856 = ⚀
-&#9857 = ⚁
-&#9858 = ⚂
-&#9859 = ⚃
-&#9860 = ⚄
+&#9856 = ⚀ 
+&#9857 = ⚁ 
+&#9858 = ⚂ 
+&#9859 = ⚃ 
+&#9860 = ⚄ 
 &#9861 = ⚅
 ```
 
