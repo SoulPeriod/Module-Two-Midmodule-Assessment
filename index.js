@@ -11,16 +11,14 @@ document.addEventListener('DOMContentLoaded',()=> {
  const sumOfDice = document.getElementById('sum-para')
  const numInput = document.getElementById('dice-number-input')
  const rollBtn = document.getElementById('submit-dice-btn')
+ const ul = document.getElementById('History-list')
  const history = document.getElementById('History-of-rolls')
 
 rollBtn.addEventListener("click", () =>{
   diceRollPicture()
-// let numOfClicks = 0
-// if(numOfClicks > 1){
-    
-// }
-})
 
+})
+let numOfClicks = 0
 function diceRollPicture () { 
     let sum = 0
     diceFace.innerHTML = ''
@@ -31,5 +29,12 @@ function diceRollPicture () {
         
     }
   sumOfDice.textContent = `sum = ${sum}`
+  numOfClicks++
+  if(numOfClicks >1){
+      const li = document.createElement('li')
+     ul.appendChild(li)
+     li.textContent = `${diceFace.innerHTML} = ${sum}`
+  }
 }
+
 })
